@@ -32,6 +32,7 @@ h1, h2, h5 {
 
 .zapopan {
 	color: #fc5226
+
 }
 
 .p-zapo {
@@ -79,8 +80,12 @@ nav a {
 	border-color: #fff !important;
 }
 
-.navbar-brand, .nav-link {
+.nav-link {
 	color: #fff !important;
+}
+
+.navbar-brand {
+	font-size: 18pt;
 }
 
 .nav-link:hover {
