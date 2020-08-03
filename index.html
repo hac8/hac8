@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="og:title" property="og:title" content="">
+  <link rel="canonical" href="">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="icon" type="image/png" href="img/favicons/favicon.png">
+  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="img/favicons/icon-180.png">
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/favicons/icon-152.png">
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="img/favicons/icon-120.png">
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="img/favicons/icon-76.png">
+
+  <title>Emplea Zapopan</title>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <div class="container">
+    <header class="" id="">
+      <div class="wraper">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-light" id="nav">
+          <a data-scroll class="navbar-brand" href="#"><span>emplea</span><span class="zapopan"><p class="p-zapo">Zapopan</p></span></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a data-scroll class="nav-link" href="#info">Información</a>
+              </li>
+              <li class="nav-item">
+                <a data-scroll class="nav-link" href="#contact">Contáctanos</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- NAV -->
+
+    <!-- CAROUSEL -->
+    <div id="carousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+        <li data-target="#carousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/img8.jpg" class="d-block w-100" alt="Mujer trabajando en su laptop dentro de la oficina">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Únete a este gran empleo bilingüe</h5>
+            <p>Salario base más incentivos suman más de $9,000 al mes</p>
+            <a data-scroll href="#contact-first" class="btn btn-primary" id="btn-top1">¡Postúlate ahora!</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/img2.jpg" class="d-block w-100" alt="Hombre concentrado trabajando en una oficina">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Entrenamiento 100% pagado</h5>
+            <p>Tenemos disponibilidad de horarios: tiempo completo y parcial</p>
+            <a data-scroll href="#contact-first" class="btn btn-primary" id="btn-top2">¡Postúlate ahora!</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/img3.jpg" class="d-block w-100" alt="Persona trabajando en una laptop desde casa">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Todos los beneficios legales</h5>
+            <p>IMSS, INFONAVIT, bono de Navidad, vacaciones pagadas, ¡y mucho más!</p>
+            <a data-scroll href="#contact-first" class="btn btn-primary" id="btn-top3">¡Postúlate ahora!</a>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <!-- CAROUSEL -->
+  </div>
+
+  <!-- FORM -->
+  <section>
+    <form id="contact-form" class="" method="post" action="php/contact.php" role="form"><a class="anchor" id="contact-first"></a>
+      <h1 class="form-h section-header">¡Ingresa tus datos y postúlate ahora!</h1>
+      <div class="messages"></div>
+      <div class="controls">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="form_name">Nombre *</label>
+              <input id="form_name" type="text" name="name" class="form-control" placeholder="Por favor escribe tu nombre" required="required" data-error="El nombre es obligatorio.">
+              <div class="help-block with-errors"></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="form_lastname">Apellido paterno *</label>
+              <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Por favor escribe tu apellido" required="required" data-error="El apellido es obligatorio.">
+              <div class="help-block with-errors"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="form-group">
+              <label for="form_email">Email *</label>
+              <input id="form_email" type="email" name="email" class="form-control" placeholder="Por favor escribe tu email" required="required" data-error="Un email válido es obligatorio.">
+              <div class="help-block with-errors"></div>
+            </div>
+          </div>
+          <div class="col-lg">
+            <div class="form-group">
+              <label for="form_date">Fecha de nacimiento *</label>
+              <input id="form_date" type="date" name="date" class="form-control" placeholder="" required="required" data-error="La fecha de nacimiento es obligatoria.">
+              <div class="help-block with-errors"></div>
+            </div>
+          </div>
+          <div class="col-lg">
+            <div class="form-group">
+              <label for="form_english">Nivel de inglés *</label>
+              <select id="form_english" name="english" class="form-control" required="required" data-error="Por favor especifica tu nivel de inglés.">
+                <option value=""></option>
+                <option value="80%">80%</option>
+                <option value="85%">85%</option>
+                <option value="90%">90%</option>
+                <option value="95%">95%</option>
+                <option value="100%">100%</option>
+              </select>
+              <div class="help-block with-errors"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <label for="form_message">Mensaje *</label>
+              <textarea id="form_message" name="message" class="form-control" placeholder="Tu mensaje" rows="4" required="required" data-error="Por favor, escribe tu mensaje."></textarea>
+              <div class="help-block with-errors"></div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <input type="submit" class="btn btn-success btn-send" value="Postularte al empleo">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <p class="text-muted">
+              <strong>*</strong> Estos campos son obligatorios.</p>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+    <!-- FORM -->
+
+
+    <!-- INFO ROW 1 -->
+    <section>
+      <div class="description row"><a class="anchor1" id="info"></a>
+        <div class="des-txt1">
+          <h2>
+            ¿Qué ofrecemos?
+          </h2>
+          <ul class="ul-des">
+            <li class="li-des">Sueldo base más incentivos, mayor a $9.000  al mes</li>
+            <li class="li-des">Entrenamiento 100% pagado</li>
+            <li class="li-des">Disponibilidad de horarios a tiempo completo y parcial</li>
+            <li class="li-des">Acuerdo laboral permanente con la empresa (desde el primer día)</li>
+            <li class="li-des">Todos los beneficios legales (IMSS, INFONAVIT, bono de Navidad, vacaciones pagadas, ¡y mucho más!)</li>
+          </ul>
+        </div>
+        <div class="des-img1">
+          <img src="img/img4.jpg" class="img1-des">
+        </div>
+      </div>
+      <!-- INFO ROW 1 -->
+
+      <!-- INFO ROW 2 -->
+      <div class="description row container2">
+        <div class="des-img2">
+          <img src="img/img5.jpg" class="img2-des">
+        </div>
+        <div class="des-txt2">
+          <h2>
+            ¿Qué es lo que necesitas?
+          </h2>
+          <ul class="ul-des">
+            <li class="li-des li-req">Excelentes habilidades en el idioma inglés hablado y escrito</li>
+            <li class="li-des li-req">Diploma de secundaria o equivalente</li>
+            <li class="li-des li-req">Poseer sólidos conocimientos en el uso de una PC.</li>
+          </ul>
+          <h2>
+            ¿Qué actividades realizarás?
+          </h2>
+          <ul class="ul-des">
+            <li class="li-des li-req">Solución de problemas</li>
+            <li class="li-des li-req">Llamadas de campo y/o solicitudes de servicios basados en la web de clientes</li>
+          </ul>
+        </div>
+      </div>
+      <!-- INFO ROW 2 -->
+
+      <!-- INFO ROW 3 -->
+      <div class="description row">
+        <div class="des-txt3">
+          <h2>
+            ¡Únete a nuestro equipo de trabajo!
+          </h2>
+          <ul class="ul-des">
+            <li class="li-des">Un gran ambiente de trabajo y eventos para todos los empleados</li>
+            <li class="li-des">Becas con las mejores universidades (UVM, U-ERRE, TEC Milenio y más)</li>
+            <li class="li-des">Participa en cursos de capacitación adicionales</li>
+            <li class="li-des">Puedes acomodar tus horarios si eres madre, padre de familia y/o estudiante</li>
+            <li class="li-des">Aumento de sueldo a los 6 meses</li>
+          </ul>
+        </div>
+        <div class="des-img3">
+          <img src="img/img6.jpg" class="img3-des">
+        </div>
+      </div>
+      <!-- INFO ROW 3 -->
+
+      <!-- INFO ROW 4 -->
+      <div class="description row container2">
+        <div class="des-img4">
+          <img src="img/img9.jpg" class="img4-des">
+        </div>
+        <div class="des-txt4">
+          <h2>
+            Vacantes disponibles en:
+          </h2>
+          <ul class="ul-des" id="">
+            <li class="locations-list">Hermosillo</li>
+            <li class="locations-list">Chihuahua</li>
+            <li class="locations-list">Puebla</li>
+            <li class="locations-list">Aguascalientes</li>
+            <li class="locations-list">Ciudad de México</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- INFO ROW 4 -->
+
+
+    <!-- CONTACT -->
+    <section id=""><a class="anchor1" id="contact"></a>
+      <div class="container-fluid row contact-main">
+        <div class="container3">
+          <h1 class="section-header">Contacto</h1>
+        </div>
+        <div class="col-md-8 cont-form-responsive">
+
+          <!-- FORM CONTACT -->
+          <form id="contact-form2" class="form-bottom" method="post" action="php/contact.php" role="form">
+            <h2 id="form-h2">¡Ingresa tus datos y postúlate ahora!</h2>
+            <div class="messages"></div>
+            <div class="controls">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="form_name">Nombre *</label>
+                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Por favor escribe tu nombre" required="required" data-error="El nombre es obligatorio.">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="form_lastname">Apellido paterno *</label>
+                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Por favor escribe tu apellido" required="required" data-error="El apellido es obligatorio.">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="form-group">
+                    <label for="form_email">Email *</label>
+                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Por favor escribe tu email" required="required" data-error="Un email válido es obligatorio.">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="col-lg">
+                  <div class="form-group">
+                    <label for="form_date">Fecha de nacimiento *</label>
+                    <input id="form_date" type="date" name="date" class="form-control" placeholder="" required="required" data-error="La fecha de nacimiento es obligatoria.">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="form-group">
+                    <label for="form_english">Nivel de inglés *</label>
+                    <select id="form_english" name="english" class="form-control" required="required" data-error="Por favor especifica tu nivel de inglés.">
+                      <option value=""></option>
+                      <option value="80%">80%</option>
+                      <option value="85%">85%</option>
+                      <option value="90%">90%</option>
+                      <option value="95%">95%</option>
+                      <option value="100%">100%</option>
+                    </select>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="form_message">Mensaje *</label>
+                    <textarea id="form_message" name="message" class="form-control" placeholder="Tu mensaje" rows="4" required="required" data-error="Por favor, escribe tu mensaje."></textarea>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <input type="submit" class="btn btn-success btn-send" value="Postularte al empleo">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <p class="text-muted">
+                    <strong>*</strong> Estos campos son obligatorios.</p>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <!-- FORM CONTACT -->
+
+          </div>
+          <span class="vertical-line"></span>
+          <div class="col-md-3 contact-wraper">
+            <p class="contact-p-icon"><i class="fas fa-phone-square-alt"></i></p>
+            <p class="contact-p">333-2222-111</p>
+            <p class="contact-p-icon"><i class="fas fa-envelope-square"></i></p>
+            <p class="contact-p">hola@empleazapopan.com</p>
+            <a href="#"><i class="fab fa-facebook-square contact-sm"></i></a>
+            <a href="#"><i class="fab fa-instagram contact-sm"></i></a>
+            <a href="#"><i class="fab fa-twitter-square contact-sm"></i></a>
+          </div>
+        </div>
+      </section>
+      <!-- CONTACT -->
+
+
+      <!-- FOOTER -->
+      <footer class="page-footer font-small">
+
+        <!-- COPYRIGHT -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+          <a href="" class="copy-link">Emplea Zapopan</a>
+        </div>
+        <!-- COPYRIGHT -->
+
+      </footer>
+      <!-- FOOTER -->
+
+
+      <!-- SCRIPTS -->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+      <script type="text/javascript" src="js/scroll-navbar.js"></script>
+      <script type="text/javascript" src="js/scroll.min.js"></script>
+      <script type="text/javascript" src="js/smooth-scroll.js"></script>
+      <script src="js/contact.js"></script>
+      <script src="js/contact2.js"></script>
+      <!-- SCRIPTS -->
+
+    </body>
+    </html>
